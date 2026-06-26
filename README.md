@@ -20,6 +20,6 @@ Flask를 이용하여 Rest API 연결
 'POST' 사용
 - def update_data(): json 파일로 업데이트랑 엔드포인드 만들기
 
-Flask API server 사용
+Flask API server 실행
 
 # Task 2

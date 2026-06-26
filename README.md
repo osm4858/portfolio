@@ -20,7 +20,7 @@ Flask를 이용하여 Rest API 연결
 - 그후 json 파일로 변경
 
 'POST' 사용
-- def update_data(): json 파일로 업데이트랑 엔드포인드 만들기
+- def update_data(): json 파일로 업데이트 및 엔드포인드 만들기
 
 Flask API server 실행
 

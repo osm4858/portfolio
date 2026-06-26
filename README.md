@@ -39,7 +39,9 @@ Flask API server 실행
 - def backtest_strategy: 백테스팅 하여 과거에 진행했을 경우 어떤 성과를 나타냈는지 표시
 - def run_complete_analysis: 조건에 맞춰 분석 실행
 
+<br />
+
 파일 실행 시 화면: [Processing.png](Task%201/Processing.png)
-<br />시각화 도표: [Figure_1.png](Figure_1.png)
+<br /> 시각화 도표: [Figure_1.png](Figure_1.png)
 
 

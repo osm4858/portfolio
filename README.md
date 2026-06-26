@@ -4,9 +4,11 @@
 프로젝트 주요 언어: Python(ver.3.13.7)
 
 # Task 1 
-[pairs_trading_task.py](Task%201/pairs_trading_task1.py) 파일 참조
+[pairs_trading_task1.py](Task%201/pairs_trading_task1.py)  파일 참조
 
-- def __init__: MongoDB URL 연결
+목표: 
+
+- def init: MongoDB URL 연결
 - def get_sse_ticker: 상하이 증권거래소 주식들 리스트 설정
 - def fetch_stock_data: 주식 데이터 수집
 - def store_stock_data, def batch_fetch_and_store: 해당 데이터 및 다른 주식 데이터를 수집 후 MongoDB에 저장
@@ -23,3 +25,21 @@ Flask를 이용하여 Rest API 연결
 Flask API server 실행
 
 # Task 2
+[pairs_trading_task2.py](Task%201/pairs_trading_task2.py)  파일 참조
+
+목표:
+
+- def init: MongoDB 연결 및 분석할 내용 세팅
+- def load_data: 분석하기 충분한 데이터 로딩
+- def build_correlation_matrix(self): 주식들간의 상관 행렬 (correlation matrix) 생성 및 통계 데이터 표시
+- def plot_correlation_heatmap: 히트맵 생성
+- def cluster_stocks: K-평균 군집화 (K-means clustering) 생성
+- def find_cointegrated_pairs: 가장 일정한 균형 관계 (cointegrated pairs)를 이루는 주식 2개 (쌍) 찾기
+- def design_mean_reversion_strategy: 주식에서 평균 회귀 전략을 위해 균형 관계를 이루는 2개의 주식 선택
+- def backtest_strategy: 백테스팅 하여 과거에 진행했을 경우 어떤 성과를 나타냈는지 표시
+- def run_complete_analysis: 조건에 맞춰 분석 실행
+
+파일 실행 시 화면: [Processing.png](Task%201/Processing.png)
+시각화 도표: [Figure_1.png](Figure_1.png)
+
+

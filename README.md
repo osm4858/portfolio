@@ -6,18 +6,18 @@
 # Task 1 
 pairs_trading_task.py(Task%201/pairs_trading_task1.py)
 
-1.1. def __init__: MongoDB URL 연결
-1.2. def get_sse_ticker: 상하이 증권거래소 주식들 리스트 설정
-1.3. def fetch_stock_data: 주식 데이터 수집
-1.4. def store_stock_data, def batch_fetch_and_store: 해당 데이터 및 다른 주식 데이터를 수집 후 MongoDB에 저장
-1.5. def update_daily_data, def get_stock_data(self, ticker, ...): 매일 데이터 업데이트 및 정보 가져오기
+- def __init__: MongoDB URL 연결
+- def get_sse_ticker: 상하이 증권거래소 주식들 리스트 설정
+- def fetch_stock_data: 주식 데이터 수집
+- def store_stock_data, def batch_fetch_and_store: 해당 데이터 및 다른 주식 데이터를 수집 후 MongoDB에 저장
+- def update_daily_data, def get_stock_data(self, ticker, ...): 매일 데이터 업데이트 및 정보 가져오기
 
 Flask를 이용하여 Rest API 연결
 'GET' 사용
-2.1. def get_stock_data (): 변수 이름값을 생성하여 REST API 엔드포인트 만들기 (ticker, start_date, end_date, fields_param)
-2.2. 그후 json 파일로 변경
+- def get_stock_data (): 변수 이름값을 생성하여 REST API 엔드포인트 만들기 (ticker, start_date, end_date, fields_param)
+- 그후 json 파일로 변경
 
 'POST' 사용
-2.2. def update_data(): json 파일로 업데이트랑 엔드포인드 만들기
+- def update_data(): json 파일로 업데이트랑 엔드포인드 만들기
 
-3. 모든 
+- 모든 

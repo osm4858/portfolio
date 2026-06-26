@@ -4,7 +4,7 @@
 프로젝트 주요 언어: Python(ver.3.13.7)
 
 # Task 1 
-pairs_trading_task.py(Task%201/pairs_trading_task1.py)
+[pairs_trading_task.py](Task%201/pairs_trading_task1.py)
 
 - def __init__: MongoDB URL 연결
 - def get_sse_ticker: 상하이 증권거래소 주식들 리스트 설정

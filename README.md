@@ -4,7 +4,7 @@
 프로젝트 주요 언어: Python(ver.3.13.7)
 
 # Task 1 
-[pairs_trading_task.py](Task%201/pairs_trading_task1.py)
+[pairs_trading_task.py](Task%201/pairs_trading_task1.py) 파일 참조
 
 - def __init__: MongoDB URL 연결
 - def get_sse_ticker: 상하이 증권거래소 주식들 리스트 설정
@@ -20,4 +20,6 @@ Flask를 이용하여 Rest API 연결
 'POST' 사용
 - def update_data(): json 파일로 업데이트랑 엔드포인드 만들기
 
-- 모든 
+Flask API server 사용
+
+# Task 2

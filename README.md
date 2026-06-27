@@ -49,6 +49,6 @@ __결과__
 <br />
 파일 실행 시 화면: [Processing.png](Task 1/Processing.png)
 <br />
-시각화 도표: [Figure 1.png](Task 1/Figure_1.png)
+시각화 도표: [Figure_1.png](<Task 1/Figure_1.png>)
 
 

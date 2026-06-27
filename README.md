@@ -1,7 +1,7 @@
 # 프로젝트 개요
 상하이 증권거래소(SSE)의 15개년 일별 데이터 및 타임별 마켓 데이터를 효율적으로 처리하기 위해 2개의 데이터베이스 인프라(NoSQL vs 시계열 DB)를 설계하고 이를 활용한 퀀트 분석 시스템을 구축한 프로젝트
 
-프로젝트 주요 언어: Python(ver.3.13.7)
+프로젝트 주요 언어: Python(ver.3.13.1)
 
 # Task 1 
 [pairs_trading_task1.py](Task%201/pairs_trading_task1.py)  파일 참조

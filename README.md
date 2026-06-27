@@ -112,11 +112,11 @@ __목표__: QuestDB와 MongoDB의 데이터베이스 성능 분석 후 csv와 js
 
 __파일 실행 시 화면__: <br />
 [Task 3.3_Processing_1.png](Task%203/Task%203.3_Processing_1.png) <br />
-[Task 3.3_Processing_2.png](Task%203/Task%203.3_Processing_2.png) 
-<br />
+[Task 3.3_Processing_2.png](Task%203/Task%203.3_Processing_2.png) <br />
+
 __벤치마크 결과__
-CSV 파일: [benchmark_results.csv](Task%203/benchmark_results.csv) 
-JSON 파일: [benchmark_results.json](Task%203/benchmark_results.json) 
+CSV 파일: [benchmark_results.csv](Task%203/benchmark_results.csv) <br />
+JSON 파일: [benchmark_results.json](Task%203/benchmark_results.json) <br />
 
 시각화 도표: <br />
 [performance_analysis.png](Task%201/performance_analysis.png) <br />

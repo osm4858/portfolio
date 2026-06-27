@@ -114,7 +114,7 @@ __파일 실행 시 화면__: <br />
 [Task 3.3_Processing_1.png](Task%203/Task%203.3_Processing_1.png) <br />
 [Task 3.3_Processing_2.png](Task%203/Task%203.3_Processing_2.png) <br />
 
-__벤치마크 결과__
+__벤치마크 결과__ <br />
 CSV 파일: [benchmark_results.csv](Task%203/benchmark_results.csv) <br />
 JSON 파일: [benchmark_results.json](Task%203/benchmark_results.json) <br />
 

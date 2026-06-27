@@ -1,0 +1,275 @@
+[
+  {
+    "scenario": {
+      "name": "Small Query - 1 Day",
+      "start_time": "2024-01-15T00:00:00Z",
+      "end_time": "2024-01-16T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "expected_size": "small"
+    },
+    "questdb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.009427467981974283,
+      "min_response_time": 0.004987001419067383,
+      "max_response_time": 0.016773223876953125,
+      "avg_query_time": 0.0054666666666666665,
+      "avg_record_count": 0,
+      "avg_data_size_kb": 0.1044921875,
+      "std_response_time": 0.006407752299674264,
+      "errors": []
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.02182324727376302,
+      "min_response_time": 0.020528078079223633,
+      "max_response_time": 0.0232088565826416,
+      "avg_query_time": 0.0099,
+      "avg_record_count": 375,
+      "avg_data_size_kb": 84.4560546875,
+      "std_response_time": 0.0013426756521246058,
+      "errors": []
+    },
+    "comparison": {
+      "faster_database": "QuestDB",
+      "speedup_factor": 2.31,
+      "time_difference": 0.0124
+    },
+    "timestamp": "2025-08-24T21:20:31.891545"
+  },
+  {
+    "scenario": {
+      "name": "Medium Query - 1 Week",
+      "start_time": "2024-01-15T00:00:00Z",
+      "end_time": "2024-01-22T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "expected_size": "medium"
+    },
+    "questdb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.007035732269287109,
+      "min_response_time": 0.00599217414855957,
+      "max_response_time": 0.008646249771118164,
+      "avg_query_time": 0.0031666666666666666,
+      "avg_record_count": 0,
+      "avg_data_size_kb": 0.1044921875,
+      "std_response_time": 0.0014149599137187271,
+      "errors": []
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.05300752321879069,
+      "min_response_time": 0.046269893646240234,
+      "max_response_time": 0.05761885643005371,
+      "avg_query_time": 0.0306,
+      "avg_record_count": 2250,
+      "avg_data_size_kb": 506.9833984375,
+      "std_response_time": 0.005965785047176438,
+      "errors": []
+    },
+    "comparison": {
+      "faster_database": "QuestDB",
+      "speedup_factor": 7.53,
+      "time_difference": 0.046
+    },
+    "timestamp": "2025-08-24T21:20:35.468282"
+  },
+  {
+    "scenario": {
+      "name": "Large Query - 1 Month",
+      "start_time": "2024-01-01T00:00:00Z",
+      "end_time": "2024-02-01T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "expected_size": "large"
+    },
+    "questdb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.006859540939331055,
+      "min_response_time": 0.0061147212982177734,
+      "max_response_time": 0.007723093032836914,
+      "avg_query_time": 0.0033,
+      "avg_record_count": 0,
+      "avg_data_size_kb": 0.1044921875,
+      "std_response_time": 0.0008107329743009178,
+      "errors": []
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.11574300130208333,
+      "min_response_time": 0.10711503028869629,
+      "max_response_time": 0.12182283401489258,
+      "avg_query_time": 0.07653333333333333,
+      "avg_record_count": 7125,
+      "avg_data_size_kb": 1605.2203776041667,
+      "std_response_time": 0.0076778661886771635,
+      "errors": []
+    },
+    "comparison": {
+      "faster_database": "QuestDB",
+      "speedup_factor": 16.87,
+      "time_difference": 0.1089
+    },
+    "timestamp": "2025-08-24T21:20:39.304002"
+  },
+  {
+    "scenario": {
+      "name": "All Fields Query",
+      "start_time": "2024-01-15T00:00:00Z",
+      "end_time": "2024-01-16T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "expected_size": "small"
+    },
+    "questdb": {
+      "success_rate": 0,
+      "avg_response_time": 0,
+      "avg_query_time": 0,
+      "avg_record_count": 0,
+      "errors": [
+        "HTTP 500: {\n  \"database\": \"QuestDB\",\n  \"error\": \"Invalid column: vwap\\nLINE 2: ...           SELECT date, open, high, low, close, volume, vwap\\n                                                                  ",
+        "HTTP 500: {\n  \"database\": \"QuestDB\",\n  \"error\": \"Invalid column: vwap\\nLINE 2: ...           SELECT date, open, high, low, close, volume, vwap\\n                                                                  ",
+        "HTTP 500: {\n  \"database\": \"QuestDB\",\n  \"error\": \"Invalid column: vwap\\nLINE 2: ...           SELECT date, open, high, low, close, volume, vwap\\n                                                                  "
+      ]
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.02164308230082194,
+      "min_response_time": 0.019655227661132812,
+      "max_response_time": 0.02436089515686035,
+      "avg_query_time": 0.008966666666666666,
+      "avg_record_count": 375,
+      "avg_data_size_kb": 91.7802734375,
+      "std_response_time": 0.002436279108250642,
+      "errors": []
+    },
+    "comparison": {},
+    "timestamp": "2025-08-24T21:20:42.737576"
+  },
+  {
+    "scenario": {
+      "name": "Old Data Query",
+      "start_time": "2015-02-02T00:00:00Z",
+      "end_time": "2015-02-09T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "expected_size": "medium"
+    },
+    "questdb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.009088754653930664,
+      "min_response_time": 0.007977008819580078,
+      "max_response_time": 0.01082921028137207,
+      "avg_query_time": 0.005066666666666667,
+      "avg_record_count": 0,
+      "avg_data_size_kb": 0.10416666666666667,
+      "std_response_time": 0.0015265059114226583,
+      "errors": []
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.04950428009033203,
+      "min_response_time": 0.04480385780334473,
+      "max_response_time": 0.0529329776763916,
+      "avg_query_time": 0.028533333333333334,
+      "avg_record_count": 1875,
+      "avg_data_size_kb": 414.9638671875,
+      "std_response_time": 0.004211129333540317,
+      "errors": []
+    },
+    "comparison": {
+      "faster_database": "QuestDB",
+      "speedup_factor": 5.45,
+      "time_difference": 0.0404
+    },
+    "timestamp": "2025-08-24T21:20:46.338785"
+  },
+  {
+    "scenario": {
+      "name": "Recent Data Query",
+      "start_time": "2023-12-01T00:00:00Z",
+      "end_time": "2023-12-31T00:00:00Z",
+      "tickers": [
+        "ADANIENT"
+      ],
+      "fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "expected_size": "large"
+    },
+    "questdb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.0065911610921223955,
+      "min_response_time": 0.0046389102935791016,
+      "max_response_time": 0.00874638557434082,
+      "avg_query_time": 0.0028666666666666667,
+      "avg_record_count": 0,
+      "avg_data_size_kb": 0.10416666666666667,
+      "std_response_time": 0.0020612464754889526,
+      "errors": []
+    },
+    "mongodb": {
+      "success_rate": 100.0,
+      "avg_response_time": 0.10376532872517903,
+      "min_response_time": 0.09246182441711426,
+      "max_response_time": 0.11457300186157227,
+      "avg_query_time": 0.06923333333333334,
+      "avg_record_count": 7500,
+      "avg_data_size_kb": 1690.19921875,
+      "std_response_time": 0.01106392463858002,
+      "errors": []
+    },
+    "comparison": {
+      "faster_database": "QuestDB",
+      "speedup_factor": 15.74,
+      "time_difference": 0.0972
+    },
+    "timestamp": "2025-08-24T21:20:50.100476"
+  }
+]
